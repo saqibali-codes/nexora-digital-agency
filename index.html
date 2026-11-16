@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXORA — Executive B2B Digital Product & Web Engineering Agency</title>
+  <meta name="description" content="NEXORA engineers high-converting websites and web products for ambitious B2B brands. Conversion-focused design, elite engineering, measurable growth." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="NEXORA Home">
+      <svg width="130" height="32" viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="0" y="8" width="16" height="16" rx="3" fill="#2563EB"/>
+        <rect x="4" y="4" width="8" height="8" rx="2" fill="#2563EB" opacity="0.4"/>
+        <rect x="4" y="20" width="8" height="8" rx="2" fill="#059669" opacity="0.7"/>
+        <text x="22" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="17" fill="#0B0F19" letter-spacing="-0.5">NEXORA</text>
+      </svg>
+    </a>
+    <nav class="nav-links" id="navLinks" role="navigation" aria-label="Primary navigation">
+      <a href="#capabilities" class="nav-link smooth-scroll">Capabilities</a>
+      <a href="#work" class="nav-link smooth-scroll">Work</a>
+      <a href="#estimator" class="nav-link smooth-scroll">Estimator</a>
+      <a href="#pricing" class="nav-link smooth-scroll">Pricing</a>
+      <a href="#faq" class="nav-link smooth-scroll">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="currency-switcher" id="currencySwitcher" role="group" aria-label="Currency selector">
+        <button class="cur-btn active" data-cur="USD" aria-pressed="true">USD</button>
+        <button class="cur-btn" data-cur="PKR" aria-pressed="false">PKR</button>
+      </div>
+      <button class="btn-primary nav-cta" id="navBookBtn">Book Discovery Call</button>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <div class="container hero-container">
+
+    <!-- Left Column -->
+    <div class="hero-left reveal">
+      <div class="hero-eyebrow">
+        <span class="dot-green"></span>
+        Available for new projects — Q1 2027
+      </div>
+      <h1 class="hero-headline">
+        We engineer <span class="text-gradient">high-converting</span> websites &amp; web products for ambitious brands.
+      </h1>
+      <p class="hero-subhead">
+        NEXORA is a boutique B2B agency fusing editorial design systems with performance-first engineering. We build websites and web apps that generate qualified pipeline — measurably.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary btn-lg" id="heroStartBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Start a Project
+        </button>
+        <a href="#work" class="btn-ghost btn-lg smooth-scroll">
+          View Case Studies
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+      <div class="hero-social-proof">
+        <div class="proof-avatars" aria-hidden="true">
+          <div class="monogram-avatar" style="background:#2563EB;">TA</div>
+          <div class="monogram-avatar" style="background:#059669;">MK</div>
+          <div class="monogram-avatar" style="background:#7C3AED;">SR</div>
+          <div class="monogram-avatar" style="background:#DC2626;">FA</div>
+        </div>
+        <span class="proof-text">Trusted by <strong>40+ B2B brands</strong> across 3 continents</span>
+      </div>
+    </div>
+
+    <!-- Right Column — Live Dashboard Card -->
+    <div class="hero-right reveal reveal-delay-1">
+      <div class="dashboard-card" role="region" aria-label="Agency Growth Dashboard">
+        <div class="dash-header">
+          <div class="dash-title-row">
+            <div>
+              <div class="dash-label">Agency Growth &amp; Conversion Dashboard</div>
+              <div class="dash-sublabel">Live client performance averages</div>
+            </div>
+            <div class="dash-status">
+              <span class="live-pulse" aria-hidden="true"></span>
+              Live
+            </div>
+          </div>
+          <div class="dash-timeframe" role="group" aria-label="Timeframe selector">
+            <button class="tf-pill active" data-tf="30" aria-pressed="true">30 Days</button>
+            <button class="tf-pill" data-tf="90" aria-pressed="false">90 Days</button>
+            <button class="tf-pill" data-tf="365" aria-pressed="false">1 Year</button>
+          </div>
+        </div>
+
+        <div class="dash-metrics">
+          <div class="metric-card accent-blue">
+            <div class="metric-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="metric-label">Conversion Rate Lift</div>
+            <div class="metric-value" id="metricConversion">+184%</div>
+            <div class="metric-trend up" id="metricConvTrend">↑ vs prior period</div>
+          </div>
+          <div class="metric-card accent-green">
+            <div class="metric-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="metric-label">Page Speed Score</div>
+            <div class="metric-value" id="metricSpeed">99/100</div>
+            <div class="metric-trend up">↑ Core Web Vitals</div>
+          </div>
+          <div class="metric-card accent-purple">
+            <div class="metric-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="metric-label">Avg Revenue Lift</div>
+            <div class="metric-value" id="metricRevenue">$47K</div>
+            <div class="metric-trend up" id="metricRevTrend">↑ per client/period</div>
+          </div>
+        </div>
+
+        <!-- SVG Bar Chart -->
+        <div class="dash-chart-wrap">
+          <div class="dash-chart-label">Monthly Qualified Leads (avg across clients)</div>
+          <svg class="bar-chart" id="barChart" viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg" aria-label="Bar chart of monthly qualified leads" role="img">
+            <defs>
+              <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2563EB"/>
+                <stop offset="100%" stop-color="#2563EB" stop-opacity="0.5"/>
+              </linearGradient>
+              <linearGradient id="barGradHigh" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#059669"/>
+                <stop offset="100%" stop-color="#059669" stop-opacity="0.5"/>
+              </linearGradient>
+            </defs>
+            <!-- Y axis labels -->
+            <text x="0" y="12" font-family="JetBrains Mono" font-size="8" fill="#94A3B8">80</text>
+            <text x="0" y="34" font-family="JetBrains Mono" font-size="8" fill="#94A3B8">60</text>
+            <text x="0" y="57" font-family="JetBrains Mono" font-size="8" fill="#94A3B8">40</text>
+            <text x="0" y="79" font-family="JetBrains Mono" font-size="8" fill="#94A3B8">20</text>
+            <!-- Grid lines -->
+            <line x1="20" y1="8" x2="320" y2="8" stroke="#E2E8F0" stroke-width="0.5"/>
+            <line x1="20" y1="30" x2="320" y2="30" stroke="#E2E8F0" stroke-width="0.5"/>
+            <line x1="20" y1="52" x2="320" y2="52" stroke="#E2E8F0" stroke-width="0.5"/>
+            <line x1="20" y1="74" x2="320" y2="74" stroke="#E2E8F0" stroke-width="0.5"/>
+            <!-- Bars group -->
+            <g id="barsGroup">
+              <!-- bars injected by JS -->
+            </g>
+            <!-- Sparkline -->
+            <polyline id="sparkLine" points="" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+          </svg>
+        </div>
+
+        <!-- Bottom stats row -->
+        <div class="dash-bottom-row">
+          <div class="dash-stat">
+            <span class="dash-stat-num" id="statProjects">127</span>
+            <span class="dash-stat-desc">Projects Delivered</span>
+          </div>
+          <div class="dash-stat">
+            <span class="dash-stat-num">4.9★</span>
+            <span class="dash-stat-desc">Client Satisfaction</span>
+          </div>
+          <div class="dash-stat">
+            <span class="dash-stat-num">0.8s</span>
+            <span class="dash-stat-desc">Avg Load Time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logos strip -->
+  <div class="logos-strip reveal">
+    <div class="container">
+      <p class="logos-label">Trusted by growth-stage companies and enterprises</p>
+      <div class="logos-row" aria-label="Client logos">
+        <div class="logo-badge">TechFlow</div>
+        <div class="logo-badge">NovaSpark</div>
+        <div class="logo-badge">CartPeak</div>
+        <div class="logo-badge">Meridian</div>
+        <div class="logo-badge">ZenithCo</div>
+        <div class="logo-badge">Pulsify</div>
+        <div class="logo-badge">ArcVenture</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CAPABILITIES ═══════════════════════════ -->
+<section class="section capabilities" id="capabilities">
+  <div class="container">
+    <div class="section-eyebrow reveal">What We Build</div>
+    <h2 class="section-title reveal">Capabilities Explorer</h2>
+    <p class="section-subtitle reveal">Four deep-stack disciplines. One integrated team.</p>
+
+    <div class="caps-layout reveal">
+      <!-- Tab Buttons -->
+      <div class="caps-tabs" role="tablist" aria-label="Capability areas">
+        <button class="cap-tab active" data-tab="platforms" role="tab" aria-selected="true" aria-controls="tab-platforms">
+          <span class="tab-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </span>
+          <span class="tab-label">Web Platforms</span>
+        </button>
+        <button class="cap-tab" data-tab="ecomm" role="tab" aria-selected="false" aria-controls="tab-ecomm">
+          <span class="tab-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </span>
+          <span class="tab-label">E-Commerce &amp; Payments</span>
+        </button>
+        <button class="cap-tab" data-tab="design" role="tab" aria-selected="false" aria-controls="tab-design">
+          <span class="tab-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M4.93 19.07l1.41-1.41M19.07 19.07l-1.41-1.41M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+          </span>
+          <span class="tab-label">UI/UX Design Systems</span>
+        </button>
+        <button class="cap-tab" data-tab="apps" role="tab" aria-selected="false" aria-controls="tab-apps">
+          <span class="tab-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </span>
+          <span class="tab-label">Custom Web Apps</span>
+        </button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="caps-panel-wrap">
+        <!-- Platform Panel -->
+        <div class="cap-panel active" id="tab-platforms" role="tabpanel" aria-labelledby="tab-platforms">
+          <div class="panel-left">
+            <h3 class="panel-title">Web Platforms &amp; Corporate Sites</h3>
+            <p class="panel-desc">Editorial-quality web presences engineered for conversion. We architect Next.js / Astro platforms with sub-second performance, structured data, and CMS flexibility.</p>
+            <div class="deliverables">
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Responsive design system &amp; brand implementation</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> CMS integration (Contentful / Sanity / WordPress)</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Core Web Vitals ≥ 95 — guaranteed</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> SEO architecture &amp; schema markup</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Analytics &amp; conversion event tracking</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Accessibility (WCAG 2.1 AA)</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Astro</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Sanity CMS</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+            <div class="timeline-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Typical Timeline: 3–6 weeks
+            </div>
+          </div>
+          <div class="panel-right">
+            <!-- Browser Frame Preview -->
+            <div class="browser-frame" aria-label="Web platform preview">
+              <div class="browser-chrome">
+                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="browser-url-bar">nexora.io/client-platform</div>
+              </div>
+              <div class="browser-body platform-preview">
+                <div class="mp-scaler">
+                  <div class="mp-inner-cap">
+                    <div class="mp-nav">
+                      <div class="mp-nav-logo">
+                        <div class="mp-nav-logo-icon">▲</div>
+                        TechCorp Pro
+                      </div>
+                      <div class="mp-nav-links">
+                        <span class="mp-nav-link">Overview</span>
+                        <span class="mp-nav-link">Solutions</span>
+                        <span class="mp-nav-link">Pricing</span>
+                        <span class="mp-nav-cta">Get Started</span>
+                      </div>
+                    </div>
+                    <div class="mp-hero">
+                      <div class="mp-eyebrow-badge"><span class="mp-eyebrow-dot"></span>+184% Pipeline Lift ↑</div>
+                      <div class="mp-h1">Scale Enterprise<br>Operations Faster</div>
+                      <div class="mp-h2">Automate workflows, unify data, and accelerate growth across your entire enterprise ecosystem with zero-friction deployment.</div>
+                      <div class="mp-cta-row">
+                        <span class="mp-btn-primary">Request Demo</span>
+                        <span class="mp-btn-ghost">View Pricing →</span>
+                      </div>
+                    </div>
+                    <div class="mp-features">
+                      <div class="mp-feat-card">
+                        <div class="mp-feat-icon-wrap" style="background:#EFF6FF;">⚡</div>
+                        <div class="mp-feat-title">Fast Deploy</div>
+                        <div class="mp-feat-desc">Ship to production in days, not months with managed infra</div>
+                      </div>
+                      <div class="mp-feat-card">
+                        <div class="mp-feat-icon-wrap" style="background:#ECFDF5;">🔒</div>
+                        <div class="mp-feat-title">Enterprise Security</div>
+                        <div class="mp-feat-desc">SOC 2 Type II &amp; ISO 27001 certified. SSO ready</div>
+                      </div>
+                      <div class="mp-feat-card">
+                        <div class="mp-feat-icon-wrap" style="background:#EDE9FE;">📈</div>
+                        <div class="mp-feat-title">Advanced Analytics</div>
+                        <div class="mp-feat-desc">Real-time dashboards and predictive insights built-in</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-Commerce Panel -->
+        <div class="cap-panel" id="tab-ecomm" role="tabpanel" aria-labelledby="tab-ecomm" hidden>
+          <div class="panel-left">
+            <h3 class="panel-title">E-Commerce &amp; Payment Systems</h3>
+            <p class="panel-desc">Revenue-engineered storefronts with hyper-optimized checkout funnels. We integrate multi-currency payments, inventory APIs, and trust-building UX patterns.</p>
+            <div class="deliverables">
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Shopify / WooCommerce / headless builds</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Stripe, Payoneer &amp; local gateway integration</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Product catalog &amp; inventory management</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Abandoned cart recovery flows</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Multi-currency &amp; tax calculation</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Conversion-optimized checkout UX</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Shopify</span>
+              <span class="tech-tag">WooCommerce</span>
+              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="timeline-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Typical Timeline: 4–8 weeks
+            </div>
+          </div>
+          <div class="panel-right">
+            <div class="browser-frame" aria-label="E-Commerce store preview">
+              <div class="browser-chrome">
+                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="browser-url-bar">store.clientbrand.com/checkout</div>
+              </div>
+              <div class="browser-body ecomm-preview">
+                <div class="mp-scaler">
+                  <div class="mp-inner-cap">
+                    <div class="mp-ecomm-layout">
+                      <div class="mp-product-side">
+                        <div class="mp-product-img-wrap">
+                          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="140" fill="#EFF6FF" rx="10"/>
+                            <ellipse cx="100" cy="72" rx="42" ry="28" fill="none" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+                            <rect x="56" y="52" width="16" height="30" rx="8" fill="#1D4ED8"/>
+                            <rect x="128" y="52" width="16" height="30" rx="8" fill="#1D4ED8"/>
+                            <path d="M57 55 C57 24 143 24 143 55" fill="none" stroke="#93C5FD" stroke-width="8" stroke-linecap="round"/>
+                            <circle cx="100" cy="72" r="8" fill="#BFDBFE"/>
+                            <circle cx="100" cy="72" r="3" fill="#2563EB"/>
+                          </svg>
+                        </div>
+                        <div class="mp-product-brand">STUDIO PRO · ANC Series</div>
+                        <div class="mp-product-name">Studio ANC Headphones</div>
+                        <div class="mp-product-price">$249</div>
+                        <div class="mp-color-dots">
+                          <span class="mp-color-dot selected" style="background:#1E293B;"></span>
+                          <span class="mp-color-dot" style="background:#2563EB;"></span>
+                          <span class="mp-color-dot" style="background:#E2E8F0;border:1.5px solid #CBD5E1;"></span>
+                        </div>
+                        <span class="mp-btn-primary" style="display:block;text-align:center;margin-top:6px;">Add to Bag →</span>
+                      </div>
+                      <div class="mp-checkout-side">
+                        <div class="mp-checkout-title">Order Summary</div>
+                        <div class="mp-checkout-line"><span>Studio ANC Headphones</span><span style="font-weight:800;">$249</span></div>
+                        <div class="mp-checkout-line"><span>Colour: Midnight Black</span><span>×1</span></div>
+                        <div class="mp-checkout-line"><span>Express Shipping</span><span style="color:#059669;font-weight:700;">Free</span></div>
+                        <div class="mp-checkout-line total"><span>Total</span><span>$249.00</span></div>
+                        <div class="mp-payment-badges">
+                          <span class="mp-pay-badge stripe">Stripe</span>
+                          <span class="mp-pay-badge">JazzCash</span>
+                          <span class="mp-pay-badge">COD</span>
+                        </div>
+                        <div class="mp-confirmed">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                          Order Confirmed
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Panel -->
+        <div class="cap-panel" id="tab-design" role="tabpanel" aria-labelledby="tab-design" hidden>
+          <div class="panel-left">
+            <h3 class="panel-title">UI/UX Design Systems</h3>
+            <p class="panel-desc">Token-based design systems that scale across your entire product surface. We build living Figma libraries and coded component systems that eliminate design drift.</p>
+            <div class="deliverables">
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Brand identity &amp; visual direction</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Figma component library (atomic design)</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Design token system (color, type, spacing)</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Interactive prototypes &amp; user flows</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Coded React/Vue component library</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Design QA &amp; handoff documentation</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Storybook</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">CSS Variables</span>
+              <span class="tech-tag">Radix UI</span>
+              <span class="tech-tag">Framer Motion</span>
+            </div>
+            <div class="timeline-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Typical Timeline: 2–4 weeks
+            </div>
+          </div>
+          <div class="panel-right">
+            <div class="browser-frame" aria-label="Design system preview">
+              <div class="browser-chrome">
+                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="browser-url-bar">design.nexora.io/system</div>
+              </div>
+              <div class="browser-body design-preview">
+                <div class="mp-scaler">
+                  <div class="mp-inner-cap">
+                    <div class="mp-ds-layout">
+                      <div class="mp-ds-header">
+                        <div class="mp-ds-title">Design System — Nexora DS</div>
+                        <div class="mp-ds-version">v2.1.0 · Figma + Code</div>
+                      </div>
+                      <div>
+                        <div class="mp-ds-section-label">Color Tokens</div>
+                        <div class="mp-color-tokens">
+                          <div class="mp-color-token">
+                            <div class="mp-token-swatch" style="background:#2563EB;"></div>
+                            <div><div class="mp-token-name">Primary</div><div class="mp-token-hex">#2563EB</div></div>
+                          </div>
+                          <div class="mp-color-token">
+                            <div class="mp-token-swatch" style="background:#059669;"></div>
+                            <div><div class="mp-token-name">Success</div><div class="mp-token-hex">#059669</div></div>
+                          </div>
+                          <div class="mp-color-token">
+                            <div class="mp-token-swatch" style="background:#0B0F19;"></div>
+                            <div><div class="mp-token-name">Ink</div><div class="mp-token-hex">#0B0F19</div></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mp-ds-section-label">Typography Scale</div>
+                        <div class="mp-type-scale">
+                          <div class="mp-type-item">
+                            <span class="mp-type-aa" style="font-size:34px;">Aa</span>
+                            <div><div class="mp-token-name">Heading · 800</div><div class="mp-token-hex">32px · −0.04em tracking</div></div>
+                          </div>
+                          <div class="mp-type-item">
+                            <span class="mp-type-aa" style="font-size:22px;font-weight:400;">Aa</span>
+                            <div><div class="mp-token-name">Body · 400</div><div class="mp-token-hex">16px · 1.65 line-height</div></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mp-ds-section-label">Button States</div>
+                        <div class="mp-btn-states">
+                          <span class="mp-btn-primary">Primary</span>
+                          <span class="mp-btn-ghost">Secondary</span>
+                          <span style="font-size:14px;font-weight:600;color:#2563EB;text-decoration:underline;cursor:pointer;">Ghost Link</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mp-ds-section-label">Components</div>
+                        <div class="mp-toggle-switches">
+                          <div class="mp-toggle on"></div>
+                          <div class="mp-toggle"></div>
+                          <div class="mp-input-box">Search components...</div>
+                          <div class="mp-badge-blue">Beta</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apps Panel -->
+        <div class="cap-panel" id="tab-apps" role="tabpanel" aria-labelledby="tab-apps" hidden>
+          <div class="panel-left">
+            <h3 class="panel-title">Custom Web Applications</h3>
+            <p class="panel-desc">Full-stack web apps engineered for scale — from B2B SaaS dashboards to internal ops tools. We architect, build, and ship production-grade software.</p>
+            <div class="deliverables">
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Product discovery &amp; requirements architecture</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Full-stack Next.js / React + Node API</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Database design (SQL / NoSQL)</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Auth, RBAC &amp; multi-tenancy</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> Admin dashboards &amp; analytics</div>
+              <div class="deliverable-item"><span class="check-icon" aria-hidden="true">✓</span> CI/CD pipeline &amp; cloud deployment</div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Next.js 15</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <div class="timeline-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Typical Timeline: 8–16 weeks
+            </div>
+          </div>
+          <div class="panel-right">
+            <div class="browser-frame" aria-label="Web app dashboard preview">
+              <div class="browser-chrome">
+                <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="browser-url-bar">app.clientsaas.com/dashboard</div>
+              </div>
+              <div class="browser-body app-preview">
+                <div class="app-sidebar">
+                  <div class="app-sidebar-logo"></div>
+                  <div class="app-nav-item active"></div>
+                  <div class="app-nav-item"></div>
+                  <div class="app-nav-item"></div>
+                  <div class="app-nav-item"></div>
+                </div>
+                <div class="app-main">
+                  <div class="app-topbar"><div class="app-page-title"></div><div class="app-topbar-actions"><div class="app-btn-sm"></div><div class="app-btn-sm blue"></div></div></div>
+                  <div class="app-kpis">
+                    <div class="app-kpi" style="border-top:2px solid #2563EB;"><div class="app-kpi-val"></div><div class="app-kpi-lbl"></div></div>
+                    <div class="app-kpi" style="border-top:2px solid #059669;"><div class="app-kpi-val"></div><div class="app-kpi-lbl"></div></div>
+                    <div class="app-kpi" style="border-top:2px solid #7C3AED;"><div class="app-kpi-val"></div><div class="app-kpi-lbl"></div></div>
+                  </div>
+                  <div class="app-table-wrap">
+                    <div class="app-table-row header"></div>
+                    <div class="app-table-row"></div>
+                    <div class="app-table-row alt"></div>
+                    <div class="app-table-row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CASE STUDIES ═══════════════════════════ -->
+<section class="section work-section" id="work">
+  <div class="container">
+    <div class="section-eyebrow reveal">Selected Work</div>
+    <h2 class="section-title reveal">Case Studies</h2>
+    <p class="section-subtitle reveal">Outcomes, not aesthetics. Every project benchmarked against measurable business KPIs.</p>
+
+    <div class="filter-pills reveal" role="group" aria-label="Filter case studies">
+      <button class="filter-pill active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-pill" data-filter="ecommerce" aria-pressed="false">E-Commerce</button>
+      <button class="filter-pill" data-filter="saas" aria-pressed="false">SaaS</button>
+      <button class="filter-pill" data-filter="corporate" aria-pressed="false">Corporate</button>
+    </div>
+
+    <div class="case-grid reveal" id="caseGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ESTIMATOR ═══════════════════════════ -->
+<section class="section estimator-section" id="estimator">
+  <div class="container">
+    <div class="section-eyebrow reveal">Transparent Pricing</div>
+    <h2 class="section-title reveal">Project Scope &amp; Cost Estimator</h2>
+    <p class="section-subtitle reveal">Configure your project. See investment range instantly — no ambiguity, no hidden costs.</p>
+
+    <div class="estimator-card reveal" role="region" aria-label="Project cost estimator">
+      <div class="est-left">
+        <div class="est-block">
+          <h3 class="est-block-title">Project Type</h3>
+          <div class="est-radio-group" role="radiogroup" aria-label="Project type">
+            <label class="est-radio">
+              <input type="radio" name="projectType" value="business" checked /> Business Website
+            </label>
+            <label class="est-radio">
+              <input type="radio" name="projectType" value="ecommerce" /> E-Commerce Store
+            </label>
+            <label class="est-radio">
+              <input type="radio" name="projectType" value="webapp" /> Custom Web App
+            </label>
+          </div>
+        </div>
+
+        <div class="est-block">
+          <h3 class="est-block-title">Add-Ons</h3>
+          <div class="est-toggle-group">
+            <label class="est-toggle-row">
+              <div class="est-toggle-info">
+                <span class="est-toggle-label">Custom UI/UX Design</span>
+                <span class="est-toggle-price" id="addonUiPrice">+$800</span>
+              </div>
+              <input type="checkbox" class="est-addon-cb" data-addon="ui" />
+              <span class="toggle-track" aria-hidden="true"></span>
+            </label>
+            <label class="est-toggle-row">
+              <div class="est-toggle-info">
+                <span class="est-toggle-label">Payment Gateway Integration</span>
+                <span class="est-toggle-price" id="addonPayPrice">+$400</span>
+              </div>
+              <input type="checkbox" class="est-addon-cb" data-addon="payment" />
+              <span class="toggle-track" aria-hidden="true"></span>
+            </label>
+            <label class="est-toggle-row">
+              <div class="est-toggle-info">
+                <span class="est-toggle-label">PHP/Backend &amp; Admin Panel</span>
+                <span class="est-toggle-price" id="addonBackendPrice">+$600</span>
+              </div>
+              <input type="checkbox" class="est-addon-cb" data-addon="backend" />
+              <span class="toggle-track" aria-hidden="true"></span>
+            </label>
+            <label class="est-toggle-row">
+              <div class="est-toggle-info">
+                <span class="est-toggle-label">Technical SEO &amp; Speed Audit</span>
+                <span class="est-toggle-price" id="addonSeoPrice">+$350</span>
+              </div>
+              <input type="checkbox" class="est-addon-cb" data-addon="seo" />
+              <span class="toggle-track" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="est-right">
+        <div class="est-result" role="status" aria-live="polite">
+          <div class="est-result-label">Estimated Investment</div>
+          <div class="est-result-price" id="estPrice">$1,200</div>
+          <div class="est-result-pkr" id="estPkrPrice">≈ PKR 334,800</div>
+          <div class="est-timeline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Timeline: <strong id="estTimeline">3–5 weeks</strong>
+          </div>
+          <div class="est-breakdown" id="estBreakdown">
+            <div class="est-break-row">
+              <span>Business Website</span>
+              <span id="estBaseVal">$1,200</span>
+            </div>
+          </div>
+          <div class="est-disclaimer">Estimates are indicative. Final quote after discovery call.</div>
+          <button class="btn-primary btn-full est-book-btn" id="estBookBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Lock This Estimate &amp; Book Call
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PRICING ═══════════════════════════ -->
+<section class="section pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-eyebrow reveal">Investment</div>
+    <h2 class="section-title reveal">Transparent Pricing</h2>
+    <p class="section-subtitle reveal">No retainers you don't need. No scope creep surprises.</p>
+
+    <div class="pricing-toggle-wrap reveal" role="group" aria-label="Pricing type">
+      <span class="pt-label" id="ptLabelOne">One-Time Build</span>
+      <label class="pricing-toggle-label" aria-label="Switch between One-Time and Monthly Retainer">
+        <input type="checkbox" id="pricingToggle" role="switch" aria-checked="false" />
+        <span class="pricing-track" aria-hidden="true"></span>
+      </label>
+      <span class="pt-label" id="ptLabelTwo">Growth Retainer</span>
+    </div>
+
+    <div class="pricing-grid reveal">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+<section class="section testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-eyebrow reveal">Client Voice</div>
+    <h2 class="section-title reveal">What Our Clients Say</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="testi-quote">"NEXORA rebuilt our lead generation engine from the ground up. Within 60 days of launch, qualified inbound leads jumped 210%. Their team communicates with the same precision they write code."</blockquote>
+        <div class="testi-author">
+          <div class="monogram-avatar lg" style="background:#2563EB;" aria-hidden="true">TA</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Tariq Al-Mansouri</div>
+            <div class="testi-title">CEO, TechFlow MENA</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="testi-quote">"We went from a dated WordPress site to a blazing-fast Next.js platform in 5 weeks. Page load dropped from 4.2s to 0.7s. Our bounce rate fell 38% the first week live. Exceptional engineering."</blockquote>
+        <div class="testi-author">
+          <div class="monogram-avatar lg" style="background:#059669;" aria-hidden="true">SR</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Sania Rashid</div>
+            <div class="testi-title">CTO, Meridian Analytics</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="testi-quote">"The NEXORA team designed and shipped our entire e-commerce platform, including Stripe and Payoneer integration, in under 7 weeks. First month revenue exceeded our 90-day projection."</blockquote>
+        <div class="testi-author">
+          <div class="monogram-avatar lg" style="background:#7C3AED;" aria-hidden="true">MK</div>
+          <div class="testi-author-info">
+            <div class="testi-name">Marcus Kimani</div>
+            <div class="testi-title">Founder, CartPeak Commerce</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<section class="section faq-section" id="faq">
+  <div class="container faq-container">
+    <div class="faq-left">
+      <div class="section-eyebrow reveal">Common Questions</div>
+      <h2 class="section-title reveal">FAQ</h2>
+      <p class="section-subtitle reveal" style="max-width:280px;">Everything you need to know before starting a project with NEXORA.</p>
+      <button class="btn-primary reveal" id="faqBookBtn" style="margin-top:2rem;">
+        Still have questions? Book a call
+      </button>
+    </div>
+    <div class="faq-right">
+      <div class="faq-list" role="list">
+        <div class="faq-item reveal" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            How long does a typical project take?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Timelines depend on scope: Business websites take 3–6 weeks, e-commerce platforms 4–8 weeks, and custom web apps 8–16+ weeks. After your discovery call, we provide a detailed milestone schedule with delivery dates before any work begins.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Do you work with clients outside Pakistan?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Absolutely. We serve clients across North America, Europe, the Middle East, and Southeast Asia. All project communication is in English, we use async-first workflows (Notion + Loom), and we accommodate overlapping timezone windows for live calls.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            What is your payment structure?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>For one-time projects: 50% upfront to initiate, 25% at design sign-off, and 25% upon delivery. For monthly retainers, billing is monthly in advance. We accept Wise, PayPal, Payoneer, Stripe, and PKR bank transfer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide post-launch support?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>All projects include a 30-day post-launch warranty covering bug fixes and minor adjustments at no additional cost. For ongoing support, our Growth Retainer tiers provide monthly maintenance, performance monitoring, and feature development.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            How do you guarantee performance benchmarks?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>We contractually guarantee Google Lighthouse scores ≥ 90 for Performance, Accessibility, Best Practices, and SEO at launch. This is validated with PageSpeed Insights reports shared in your project handoff document. If we miss it, we fix it — no charge.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CTA FOOTER BAND ═══════════════════════════ -->
+<section class="cta-band">
+  <div class="container cta-band-inner reveal">
+    <div class="cta-band-left">
+      <h2 class="cta-band-title">Ready to build something extraordinary?</h2>
+      <p class="cta-band-sub">Discovery calls are free, focused, and 30 minutes. We'll scope your project and send you a proposal within 48 hours.</p>
+    </div>
+    <div class="cta-band-right">
+      <button class="btn-primary btn-lg btn-white" id="ctaBandBtn">Book Discovery Call</button>
+      <p class="cta-band-note">No commitment required</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg width="130" height="32" viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="0" y="8" width="16" height="16" rx="3" fill="#2563EB"/>
+        <rect x="4" y="4" width="8" height="8" rx="2" fill="#2563EB" opacity="0.4"/>
+        <rect x="4" y="20" width="8" height="8" rx="2" fill="#059669" opacity="0.7"/>
+        <text x="22" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="-0.5">NEXORA</text>
+      </svg>
+      <p class="footer-tagline">Engineering high-converting digital products for ambitious B2B brands.</p>
+      <p class="footer-location">📍 Karachi, Pakistan · Remote-first worldwide</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#capabilities">Web Platforms</a>
+        <a href="#capabilities">E-Commerce</a>
+        <a href="#capabilities">UI/UX Design</a>
+        <a href="#capabilities">Web Apps</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#work">Case Studies</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" id="footerBookBtn">Book a Call</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@nexora.io">hello@nexora.io</a>
+        <a href="https://wa.me/923001234567" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2026 NEXORA Digital. All rights reserved.</p>
+      <p class="footer-bottom-right">Built with precision in Pakistan.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ CASE STUDY MODAL ═══════════════════════════ -->
+<div class="modal-overlay" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="caseModalTitle" hidden>
+  <div class="modal-box modal-box-lg">
+    <button class="modal-close" id="caseModalClose" aria-label="Close case study">✕</button>
+    <div class="modal-content" id="caseModalContent">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ BOOKING MODAL ═══════════════════════════ -->
+<div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle" hidden>
+  <div class="modal-box">
+    <button class="modal-close" id="bookingModalClose" aria-label="Close booking modal">✕</button>
+    <div class="booking-idle" id="bookingIdle">
+      <div class="booking-header">
+        <div class="booking-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <h2 class="modal-title" id="bookingModalTitle">Book Your Discovery Call</h2>
+          <p class="modal-subtitle">30 minutes · Free · No commitment</p>
+        </div>
+      </div>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookName">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="bookName" name="name" placeholder="Ahmad Hassan" required autocomplete="name" />
+            <span class="field-error" id="nameError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="bookEmail">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="bookEmail" name="email" placeholder="you@company.com" required autocomplete="email" />
+            <span class="field-error" id="emailError" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bookWhatsapp">WhatsApp Number</label>
+          <input type="tel" id="bookWhatsapp" name="whatsapp" placeholder="+92 300 1234567" autocomplete="tel" />
+        </div>
+        <div class="form-group">
+          <label for="bookPackage">Selected Package / Estimate</label>
+          <input type="text" id="bookPackage" name="package" readonly class="input-readonly" />
+        </div>
+        <div class="form-group">
+          <label for="bookBrief">Project Brief <span aria-hidden="true">*</span></label>
+          <textarea id="bookBrief" name="brief" rows="4" placeholder="Describe your project, goals, and any specific requirements..." required></textarea>
+          <span class="field-error" id="briefError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn-primary btn-full btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.4 2 2 0 0 1 3 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15z"/></svg>
+          Request Discovery Call
+        </button>
+        <p class="form-privacy">Your data is never shared. We respond within 4 business hours.</p>
+      </form>
+    </div>
+    <div class="booking-success" id="bookingSuccess" hidden>
+      <div class="success-icon" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3 class="success-title">Discovery Call Requested!</h3>
+      <p class="success-message">We've received your request and will reach out within 4 business hours to confirm your 30-minute discovery call.</p>
+      <div class="success-details" id="successDetails"></div>
+      <button class="btn-primary" id="successClose">Perfect, Got It!</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
